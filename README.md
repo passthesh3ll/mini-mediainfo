@@ -57,4 +57,4 @@ Copy `mi.py` inside `~/.local/bin` and you will be able to run it on any termina
 
 ## How to save output
 
-`mi . --nc >> output.txt`
+`mi . -nc >> output.txt`
