@@ -1,8 +1,31 @@
-# Mini Mediainfo (mi)
+# mini-mediainfo
+![image](https://i.postimg.cc/nc5r17Tn/2.png)
 
 A basic mediainfo wrapper with minimalistic output. A simple tool for DataHoarders, Muxers and Encoders, based on [pymediainfo](https://pymediainfo.readthedocs.io/en/stable/pymediainfo.html) wrapper.
 
+## dependences:
+- mediainfo
+- pymediainfo
+- colorama
+
 ## Usage
+
+Info of a file:
+```sh
+mi <file.mkv/mp4/avi..>
+```
+Info of a folder:
+```sh
+mi .
+```
+Save output:
+```sh
+mi . -nc >> output.txt
+```
+
+![screen](https://i.postimg.cc/VkCQPbws/1.png)
+
+## Help
 
 ```
 usage: mi.py [-h] [-r] [-fn FILTER_NAME] [-fr {SD,HD,FHD,UHD}] [-fe] [-fm]
@@ -40,21 +63,3 @@ options:
   -v, --verbose         fallback to vanilla mediainfo output
 
 ```
-
-## Screenshot
-
-![screen](https://i.imgur.com/XAejBtu.png)
-
-## Installation
-
-Copy `mi.py` inside `~/.local/bin` and you will be able to run it on any terminal by: `mi.py [parameters]`
-
-**dependences**:
-
-- mediainfo >= 23.04
-- pymediainfo >= 6.0.1
-- colorama >= 0.4.6
-
-## How to save output
-
-`mi . -nc >> output.txt`
