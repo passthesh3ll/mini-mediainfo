@@ -3,18 +3,18 @@
 
 A basic mediainfo wrapper with minimalistic output. A simple tool for DataHoarders, Muxers and Encoders, based on [pymediainfo](https://pymediainfo.readthedocs.io/en/stable/pymediainfo.html) wrapper.
 
-## dependences:
+## Dependences
 - mediainfo
 - pymediainfo
 - colorama
 
 ## Usage
 
-Info of a file:
+A file:
 ```sh
 mi <file.mkv/mp4/avi..>
 ```
-Info of a folder:
+All files in a folder:
 ```sh
 mi .
 ```
